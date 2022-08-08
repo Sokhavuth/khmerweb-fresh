@@ -1,0 +1,32 @@
+/* static/styles/base.css */
+:root{
+    --background-light: #26f8ad;
+    --background: lightgrey;
+    --background-dark: #149165;
+    --body-font: 14px/1.5 Vidaloka, OdorMeanChey;
+    --link: #17a372;
+    --color: black;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--link);
+}
+a:hover{
+    opacity: .7;
+}
+.region{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+  
+body{
+    color: var(--color);
+    font: var(--body-font);
+    background: var(--background);
+}

@@ -1,0 +1,15 @@
+{
+  "imports": {
+    "$fresh/": "https://deno.land/x/fresh@1.0.2/",
+    "preact": "https://esm.sh/preact@10.10.0",
+    "preact/": "https://esm.sh/preact@10.10.0/",
+    "preact-render-to-string": "https://esm.sh/preact-render-to-string@5.2.1?external=preact",
+    "config": "https://deno.land/std@0.147.0/dotenv/mod.ts",
+    "jwt": "https://deno.land/x/djwt@v2.2/mod.ts",
+    "mongodb": "https://deno.land/x/mongo@v0.30.1/mod.ts",
+    "redis": "https://deno.land/x/redis@v0.26.0/mod.ts",
+    "bcrypt": "./bcrypt.ts",
+    "cookies": "https://deno.land/std@0.150.0/http/cookie.ts",
+    "setting": "./setting.ts"
+  }
+}

@@ -1,0 +1,51 @@
+/* static/styles/admin/post.css */
+.Index .main .content form .ck-editor__editable{
+    min-height: 305px;
+}
+
+.Index .main .content form .wrapper,
+.Index .main .content .wrapper,
+.Index .main .content .viddata div{
+    display: grid;
+    grid-template-columns: 20% 32.5% 32.5% 15%;
+}
+
+.Index .main .content form input,
+.Index .main .content form select,
+.Index .main .content .wrapper input,
+.Index .main .content .wrapper select{
+    width: 100%;
+    font: var(--body-font);
+    padding: 2px 5px;
+}
+
+.Index .main .content form .submit{
+    background: lavender;
+    text-align: center;
+    color: black;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.Index .main .content .viddata div{
+    width: 100%;
+}
+
+.Index .main .content .viddata div p:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.Index .main .content .viddata b,
+.Index .main .content .viddata input,
+.Index .main .content .viddata p{
+    font: var(--body-font);
+    padding: 5px;
+    background: lightgrey;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.Index .main .content .viddata input{
+    background: white;
+}
