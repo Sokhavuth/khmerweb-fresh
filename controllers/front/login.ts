@@ -37,7 +37,7 @@ class Login{
         const formData = await req.formData();
     
         const user = await userdb.checkUser(formData.get("email"));
-    
+        
         if(user){
             if(user.role in {'Admin':1,'Editor':1,'Author':1,"Guest":1}){
                 if(await bcrypt.compareSync(formData.get("password"), user.password)){
@@ -55,19 +55,19 @@ class Login{
                     const config = setting();
                     config.page_title = "ទំព័រ​ចុះ​ឈ្មោះ";
                     config.message = "ពាក្យ​សំងាត់​មិន​ត្រឹមត្រូវ​ទេ!";
-                    return await ctx.render({"settings": config});
+                    return await ctx.render({"setting": config});
                 }
             }else{
                 const config = setting();
                 config.page_title = "ទំព័រ​ចុះ​ឈ្មោះ";
                 config.message = "អ្នក​មិន​ទាន់មាន​ឈ្មោះ​ក្នុង​បញ្ជី​ទេ";
-                return await ctx.render({"settings": config});
+                return await ctx.render({"setting": config});
             }
         }else{
             const config = setting();
             config.page_title = "ទំព័រ​ចុះ​ឈ្មោះ";
             config.message = "Email ​មិន​ត្រឹមត្រូវ​ទេ!";
-            return await ctx.render({"settings": config});
+            return await ctx.render({"setting": config});
         }    
     }
 }
